@@ -1,0 +1,11 @@
+<div>
+    <h3 class="text-center text-success">ViewChild/ViewChildren</h3>
+    <p class="alert alert-secondary" #highlight>This message is important.....</p>
+    <strong class="alert alert-secondary" #highlight>This message is important.....</strong>
+    <p style="position:relative; top:30px">Counter {{ child?.counter }}</p>
+    <div>
+        <button class="btn btn-info" style="position:relative; top:30px" (click)="inc()">Increament</button>
+        <button class="btn btn-info" style="position:relative; top:30px" (click)="dec()">Decrement</button>
+    </div>
+    <app-child #child ></app-child>
+</div>
