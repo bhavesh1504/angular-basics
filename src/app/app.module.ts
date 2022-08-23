@@ -9,6 +9,7 @@ import { NotifyboardComponent } from './components/notifyboard/notifyboard.compo
 import { BsServiceService } from './core/bs-service.service';
 import { ViewchildComponent } from './components/viewchild-children/viewchild.component';
 import { ChildComponent } from './components/viewchild-children/children/child.component';
+import { KidComponent } from './components/kid/kid/kid.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChildComponent } from './components/viewchild-children/children/child.c
     ContactComponent,
     NotifyboardComponent,
     ViewchildComponent,
-    ChildComponent
+    ChildComponent,
+    KidComponent
   ],
   imports: [
     BrowserModule,

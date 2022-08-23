@@ -7,6 +7,8 @@ import { Observable, Subscription } from 'rxjs';
 })
 export class AppComponent implements OnInit, OnDestroy {
   title = 'angular-basics';
+  username:string = 'IM PARENT';
+  childData:string;
   constructor(){}
   
   // mysub! : Subscription 
@@ -46,6 +48,13 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     // this.mysub.unsubscribe();
+  }
+
+
+  parentMethod(data:any){
+
+    this.childData = data;
+
   }
 
 

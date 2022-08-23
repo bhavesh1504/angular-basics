@@ -15,8 +15,10 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="viewchild" routerLinkActive="active">ViewChild</a>
       </li>
+      <app-kid [uname] = 'username' (notify)="parentMethod($event)"></app-kid>
     </ul>
   </div>
+  <p style="position:relative; right: 30px;">{{childData}}</p>
   <div style="position:relative; top: 5px;">
     <app-notifyboard></app-notifyboard>
   </div>
